@@ -1,0 +1,263 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main styling */
+html,body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+h1,h2,h3{
+    padding-bottom: 20px;
+}
+p {
+    margin: 10px 
+}
+
+
+/* Utility class*/
+.prytext{
+    color: white;
+}
+.btn{
+    color: white;
+    background: black;
+    padding: 13px 20px;
+    border: none;
+    cursor:pointer;
+}
+.btn:hover{
+    color: black;
+    background: white;
+}
+.btnwhite{
+    color: black;
+    background: white;
+    padding: 13px 20px;
+    border: none;
+    cursor:pointer;
+}
+.btnwhite:hover{
+    color: white;
+    background: black;
+}
+
+
+
+/* NAVBAR */
+nav {
+    background: black;
+    overflow: auto;
+}
+.container{
+    overflow: auto;
+    max-width: 1120px;
+    padding: 20px;
+    margin: auto;
+}
+nav h3 {
+    color: white;
+    float: left;
+    padding-top: 10px;
+
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    color: white;
+    float: right;
+    padding: 10px;
+}
+.current{
+    color: black;
+    background-color: white;
+}
+nav li:hover {
+    color: black;
+    background-color: white;
+}
+
+
+
+
+
+
+
+/* SHOWCASE AREA */
+#showcase{
+    display: block;
+    background: url('./img/pic1.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+#showcase .showcasecontent{
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcasecontent h2{
+    font-size: 60px;
+    line-height: 1.2rem;
+}
+#showcase .showcasecontent p{
+    margin-bottom: 1rem;
+}
+
+
+/* whatwedo */
+.whatwedoimg{
+    float: left;
+    width: 50%;
+    background:url('./img/pic2.jpg') no-repeat center center/cover;
+    min-height: 60%;
+}
+.whatwedocontent{
+    float: right;
+    width: 50%;
+    min-height: 60%;
+    text-align: center;
+    line-height: 2rem;
+    padding: 50px 30px;
+    background-color: black;
+    color: white;
+
+}
+
+/* features */
+.threedivseccon{
+    width: 100%;
+}
+.threedivsec{
+    float: left;
+    width:33.3%;
+    padding: 50px;
+    text-align: center;
+    background: white;
+}
+ .two{
+    background: black;
+    color: white;
+}
+
+
+
+/* about page*/
+.aboutinfo{
+    padding-top: 1rem;
+}
+.inforight{
+    float: right;
+    width: 50%;
+   
+}
+.inforight img{
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 50%;
+    min-height: 50%;
+}
+.infoleft{
+    float: left;
+    width: 50%;
+    min-height: 50%;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    background-color: #fff;
+
+}
+
+/* testimonials */
+#testimonials{
+    clear: both;
+    padding: 3%;
+    text-align: center;
+    background-color: gray;
+}
+.realtestimonials img{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    width: 13%;
+}
+.realtestimonials p{
+    font-size: larger;
+    color: white;
+}
+
+
+/* Contact form */
+.formgroup{
+    margin: 20px;
+
+}
+.formgroup labe{
+    display: block;
+    margin-bottom: 5px;
+}
+.formgroup input, .formgroup textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px #ddd solid;
+}
+.formgroup textarea{
+    height: 200px;
+}
+ button{
+     margin-left: 30px;
+ }
+/* footer */
+#footer{
+    text-align: center;
+    background: #444;
+    color: white;
+    clear: both;
+}
+
+
+
+/* Responsiveness */
+
+
+/* homw page */
+@media screen and (max-width:1028px){
+.showcasecontent p{
+    display: none;
+}
+#showcase .showcasecontent h2{
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+
+}
+
+@media screen and (max-width:944px){
+    .whatwedoimg{
+        display: none;
+    }
+    .whatwedocontent{
+        width: 100%;
+    }
+    .threedivsec{
+        width: 100%;
+    }
+}
+
+/* about page */
+@media screen and (max-width:1260px){
+    .inforight{
+        display: none;
+    }
+    .infoleft{
+        width: 100%;
+    }
+}
